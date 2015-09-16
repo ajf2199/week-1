@@ -1,0 +1,180 @@
+Welcome to Canopy's interactive data-analysis environment!
+ with pylab-backend set to: qt
+Type '?' for more information.
+
+In [1]: %run "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py"
+  File "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py", line 1
+    Aaron Febuary
+                ^
+SyntaxError: invalid syntax
+ 
+
+In [2]: %run "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py"
+  File "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py", line 14
+    Players = ('Player 1', 'Player 2')
+          ^
+IndentationError: expected an indented block
+ 
+
+In [3]: %run "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py"
+  File "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py", line 12
+    Players = ('Player 1, 'Player 2')
+                                ^
+SyntaxError: invalid syntax
+ 
+
+In [4]: %run "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py"
+  File "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py", line 12
+    Player = ('Player 1, 'Player 2')
+                               ^
+SyntaxError: invalid syntax
+ 
+
+In [5]: %run "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py"
+  File "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py", line 28
+    def play(self, dealerCard):
+      ^
+IndentationError: expected an indented block
+ 
+
+In [6]: %run "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py"
+  File "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py", line 28
+    def play(self, dealerCard):
+      ^
+IndentationError: expected an indented block
+ 
+
+In [7]: %run "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py"
+  File "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py", line 36
+    returnID self.playerID
+                ^
+SyntaxError: invalid syntax
+ 
+
+In [8]: %run "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py"
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py in <module>()
+      9 
+     10 
+---> 11 class Player:
+     12     playerID = ('Player 1', self)
+     13     pot = 25
+
+C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py in Player()
+     10 
+     11 class Player:
+---> 12     playerID = ('Player 1', self)
+     13     pot = 25
+     14     lastcard = 9
+
+NameError: name 'self' is not defined 
+
+In [9]: %run "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py"
+
+start game 0
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py in <module>()
+     59     print ''
+     60     print 'start game ' + str(i)
+---> 61     playHand(players)
+     62 
+     63 print ''
+
+C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py in playHand(players)
+     41 
+     42     for player in players:
+---> 43         print player.play (random.choice(cards))
+     44 
+     45 def checkBalances(players):
+
+C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py in play(self, dealerCard)
+     23         self.lastCard = random.choice(cards)
+     24 
+---> 25         if playerCard < dealerCard:
+     26             self.pot -= gameStake
+     27             return 'player ' + str(self.playerID) + ' Lose, ' + str(self.lastCard) + ' vs ' + str(dealerCard)
+
+NameError: global name 'playerCard' is not defined 
+
+In [10]: %run "C:\Users\Aaron Febuary\Documents\GitHub\WEEK-1\week-1\week-1.py"
+
+start game 0
+player 0 Lose, 7 vs 1
+player 1 Lose, 9 vs 4
+player 2 Lose, 0 vs 7
+player 3 Lose, 0 vs 5
+player 4 Lose, 4 vs 5
+
+start game 1
+player 0 Lose, 6 vs 5
+player 1 Lose, 5 vs 4
+player 2 Lose, 9 vs 1
+player 3 Lose, 3 vs 6
+player 4 Lose, 8 vs 2
+
+start game 2
+player 0 Lose, 8 vs 3
+player 1 Lose, 7 vs 0
+player 2 Lose, 3 vs 9
+player 3 Lose, 5 vs 9
+player 4 Lose, 0 vs 1
+
+start game 3
+player 0 Lose, 6 vs 2
+player 1 Lose, 1 vs 4
+player 2 Lose, 9 vs 5
+player 3 Lose, 1 vs 0
+player 4 Lose, 8 vs 1
+
+start game 4
+player 0 Lose, 2 vs 3
+player 1 Lose, 1 vs 0
+player 2 Lose, 8 vs 9
+player 3 Lose, 7 vs 5
+player 4 Lose, 7 vs 0
+
+start game 5
+player 0 Lose, 0 vs 0
+player 1 Lose, 2 vs 7
+player 2 Lose, 7 vs 3
+player 3 Lose, 7 vs 0
+player 4 Lose, 6 vs 1
+
+start game 6
+player 0 Lose, 0 vs 3
+player 1 Lose, 0 vs 7
+player 2 Lose, 4 vs 6
+player 3 Lose, 0 vs 9
+player 4 Lose, 9 vs 8
+
+start game 7
+player 0 Lose, 1 vs 4
+player 1 Lose, 9 vs 6
+player 2 Lose, 5 vs 5
+player 3 Lose, 1 vs 2
+player 4 Lose, 1 vs 6
+
+start game 8
+player 0 Lose, 1 vs 9
+player 1 Lose, 5 vs 4
+player 2 Lose, 6 vs 4
+player 3 Lose, 0 vs 8
+player 4 Lose, 2 vs 7
+
+start game 9
+player 0 Lose, 3 vs 4
+player 1 Lose, 4 vs 6
+player 2 Lose, 0 vs 6
+player 3 Lose, 2 vs 7
+player 4 Lose, 4 vs 6
+
+game results:
+player 0 has $0 left.
+player 1 has $0 left.
+player 2 has $0 left.
+player 3 has $0 left.
+player 4 has $0 left.
+
+In [11]:
